@@ -1,0 +1,13 @@
+# ninja log v5
+7	166	1560938732	/home/louis/ros/devel_isolated/mobro/include/mobro/GainsConfig.h	8d8057770140c39f
+7	166	1560938732	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig.dox	8d8057770140c39f
+7	166	1560938732	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig-usage.dox	8d8057770140c39f
+7	166	1560938732	/home/louis/ros/devel_isolated/mobro/lib/python2.7/dist-packages/mobro/cfg/GainsConfig.py	8d8057770140c39f
+7	166	1560938732	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig.wikidoc	8d8057770140c39f
+0	99	0	CMakeFiles/install.util	3d0e614f30fb8959
+0	60	1561037211	/home/louis/ros/devel_isolated/mobro/include/mobro/GainsConfig.h	b2595ad87c9652f0
+0	60	1561037211	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig.dox	b2595ad87c9652f0
+0	60	1561037211	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig-usage.dox	b2595ad87c9652f0
+0	60	1561037211	/home/louis/ros/devel_isolated/mobro/lib/python2.7/dist-packages/mobro/cfg/GainsConfig.py	b2595ad87c9652f0
+0	60	1561037211	/home/louis/ros/devel_isolated/mobro/share/mobro/docs/GainsConfig.wikidoc	b2595ad87c9652f0
+0	40	0	CMakeFiles/install.util	3d0e614f30fb8959

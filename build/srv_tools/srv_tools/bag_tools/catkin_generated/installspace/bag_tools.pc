@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/install
+
+Name: bag_tools
+Description: Description of bag_tools
+Version: 0.0.3
+Cflags: -I/home/louis/ros/install/include
+Libs: -L/home/louis/ros/install/lib 
+Requires: rosbag

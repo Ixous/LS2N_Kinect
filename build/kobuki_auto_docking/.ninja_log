@@ -1,0 +1,7 @@
+# ninja log v5
+1	11125	1560938561	CMakeFiles/kobuki_auto_docking_nodelet.dir/src/nodelet.cpp.o	1a959167d82efc52
+11132	33362	1560938583	CMakeFiles/kobuki_auto_docking_ros.dir/src/auto_docking_ros.cpp.o	16daa586f4bd948a
+33362	34200	1560938584	/home/louis/ros/devel_isolated/kobuki_auto_docking/lib/libkobuki_auto_docking_ros.so	87289394475b8459
+34200	34595	1560938584	/home/louis/ros/devel_isolated/kobuki_auto_docking/lib/libkobuki_auto_docking_nodelet.so	e795f9d99b92ca4c
+7	39	0	CMakeFiles/install.util	ca61d98960d529e0
+3	27	0	CMakeFiles/install.util	ca61d98960d529e0

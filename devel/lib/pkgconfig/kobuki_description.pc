@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/devel
+
+Name: kobuki_description
+Description: Description of kobuki_description
+Version: 0.7.6
+Cflags: 
+Libs: -L/home/louis/ros/devel/lib 
+Requires: urdf xacro

@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/install
+
+Name: pointcloud_tools
+Description: Description of pointcloud_tools
+Version: 0.0.3
+Cflags: 
+Libs: -L/home/louis/ros/install/lib 
+Requires: 

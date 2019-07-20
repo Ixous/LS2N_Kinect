@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/install_isolated
+
+Name: mobro
+Description: Description of mobro
+Version: 0.0.0
+Cflags: -I/home/louis/ros/install_isolated/include
+Libs: -L/home/louis/ros/install_isolated/lib 
+Requires: 

@@ -1,0 +1,5 @@
+# ninja log v5
+1	5245	1560938593	CMakeFiles/kobuki_bumper2pc_nodelet.dir/src/kobuki_bumper2pc.cpp.o	2cbb3e48a3686b4e
+5248	5561	1560938594	/home/louis/ros/devel_isolated/kobuki_bumper2pc/lib/libkobuki_bumper2pc_nodelet.so	982d6d37e84f7aac
+5	50	0	CMakeFiles/install.util	8155e322dc1a65e4
+2	18	0	CMakeFiles/install.util	8155e322dc1a65e4

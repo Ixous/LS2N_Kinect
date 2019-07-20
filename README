@@ -1,0 +1,16 @@
+commands for the simulation :
+roslaunch simumap run.launch file:=/home/louis/ros/src/MOBRO_ROS/maps/Eld
+with file the path and name of the map file (same name for both pgm and yaml)
+
+commands for cartographer :
+roslaunch mobro turtlebot_slam.launch file:=Eone
+with file the name of the bag file (in the /home/louis/ros/src/MOBRO_ROS/bag/ directory, or specify the whole path)
+then to save the map if it didn't do it automatically :
+rosrun map_server map_saver
+
+tune the parameters of cartographer in the lua file in /home/louis/ros/src/MOBRO_ROS/config/
+
+downscale the map before launching the simulation for better performance and change the resolution accordingly
+The default resolution is 0.01 (1cm/pixel). Downscaling the image by a factor of 5 and changing the resolution in the corresponding yaml file to 0.05 is recommended
+
+if the simulation crashes with an OpenCV error, disable window resizing (set resizeWindow to false in the simumap launch file)

@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/devel
+
+Name: mobro
+Description: Description of mobro
+Version: 0.0.0
+Cflags: -I/home/louis/ros/devel/include
+Libs: -L/home/louis/ros/devel/lib 
+Requires: 

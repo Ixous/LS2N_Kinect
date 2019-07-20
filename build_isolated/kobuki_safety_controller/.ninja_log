@@ -1,0 +1,5 @@
+# ninja log v5
+2	7703	1560938653	CMakeFiles/kobuki_safety_controller_nodelet.dir/src/nodelet.cpp.o	61e08b8fc245ac4e
+7711	8135	1560938653	/home/louis/ros/devel_isolated/kobuki_safety_controller/lib/libkobuki_safety_controller_nodelet.so	59af4470c6f39e2c
+6	53	0	CMakeFiles/install.util	7e29b0182104fa73
+2	26	0	CMakeFiles/install.util	7e29b0182104fa73

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/louis/ros/devel_isolated/mobro/setup.sh

@@ -1,0 +1,6 @@
+# ninja log v5
+0	4754	1560938620	src/CMakeFiles/keyop.dir/keyop_core.cpp.o	9f8d26f629880d04
+4759	8775	1560938624	src/CMakeFiles/keyop.dir/main.cpp.o	1b550f118168c273
+8775	9215	1560938625	/home/louis/ros/devel_isolated/kobuki_keyop/lib/kobuki_keyop/keyop	f3e2dbd804e12d5f
+5	77	0	CMakeFiles/install.util	6f43f3926515f721
+3	26	0	CMakeFiles/install.util	6f43f3926515f721

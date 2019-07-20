@@ -1,0 +1,56 @@
+<!-- -->
+<launch>
+
+<!-- mapping params -->
+ <arg name="res" default="0.05"/>
+ <arg name="config" default="turtlebot3_lds_2d_gazebo"/>
+ <arg name="fast" default="true"/>
+ <arg name="file" default="house"/>
+ <arg name="robot" default="$(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro"/>
+ <arg name="use_sim_time" default="true" />
+ 
+ <!-- map saver params -->
+ <arg name="occ" default="65"/>
+ <arg name="free" default="2"/> 
+
+  <param name="/use_sim_time" value="$(arg use_sim_time)"/>
+  
+   <param name="robot_description" command="$(find xacro)/xacro $(arg robot)"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/demo_3d.rviz" />
+      
+    <group if="$(arg fast)">
+    
+      <node name="cartographer_offline_node" pkg="cartographer_ros"
+      type="cartographer_offline_node" args="
+          -configuration_directory $(find mobro)/config
+          -configuration_basenames $(arg config).lua
+          -bag_filenames $(find mobro)/bag/$(arg file).bag"
+      output="screen">
+  </node>
+  
+    </group>
+    
+    
+    <group unless="$(arg fast)">
+    
+      <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find mobro)/config
+          -configuration_basename $(arg config).lua"
+      output="screen">
+  </node>
+      
+  <node name="playbag" pkg="rosbag" type="play"
+      args="--clock $(find mobro)/bag/$(arg file).bag -k" />
+    </group>
+      
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution $(arg res)" />
+      
+    <node name="map_saver_trigger" pkg="mobro" type="map_saver" output="screen"
+    args="'--occ $(arg occ) --free $(arg free) -f $(find mobro)/maps/$(arg file)'"/>
+      
+</launch>

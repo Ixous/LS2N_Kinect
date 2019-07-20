@@ -1,0 +1,8 @@
+prefix=/home/louis/ros/install_isolated
+
+Name: simumap
+Description: Description of simumap
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/louis/ros/install_isolated/lib 
+Requires: roscpp sensor_msgs std_msgs cv_bridge image_transport

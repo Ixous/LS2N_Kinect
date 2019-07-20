@@ -1,0 +1,39 @@
+<!-- -->
+<launch>
+
+<!-- mapping params -->
+ <arg name="res" default="0.01"/>
+ <arg name="fast" default="true"/>
+ <arg name="file" default="D_building"/>
+
+ <!-- map saver params -->
+ <arg name="occ" default="65"/>
+ <arg name="free" default="2"/> 
+ 
+ <!--<node name="static_transform_publisher" pkg="tf" type="static_transform_publisher"
+ args="0 0 0 0 0 0 odom laser 1"/>-->
+ 
+ <node name="static_transform_publisher_base_link" pkg="tf" type="static_transform_publisher"
+ args="0 0 0 0 0 0 map base_link 1"/>
+ <node name="static_transform_publisher_base_footprint" pkg="tf" type="static_transform_publisher"
+ args="0 0 0 0 0 0 base_link base_footprint 1"/>
+ <node name="static_transform_publisher_wheel_left_link" pkg="tf" type="static_transform_publisher"
+ args="0 0 0 0 0 0 base_link wheel_left_link 1"/>
+ <node name="static_transform_publisher_wheel_right_link" pkg="tf" type="static_transform_publisher"
+ args="0 0 0 0 0 0 base_link wheel_right_link 1"/>
+
+  <include file="$(find mobro)/bag/offline_slam.launch">
+  
+        <arg name="res" value="$(arg res)"/>
+        <arg name="config" value="turtlebot_urg_lidar_2d"/>
+        <arg name="fast" value="$(arg fast)"/>
+        <arg name="file" value="$(arg file)"/>
+        <arg name="robot" default="$(find turtlebot_description)/robots/kobuki_hexagons_hokuyo.urdf.xacro"/>
+        <arg name="use_sim_time" value="false" />
+        
+        <!-- map saver params -->
+        <arg name="occ" value="$(arg occ)"/>
+        <arg name="free" value="$(arg free)"/> 
+    </include>
+      
+</launch>

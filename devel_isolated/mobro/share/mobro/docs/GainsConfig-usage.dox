@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="mobro" pkg="mobro" type="mobro">
+  <param name="Kp" type="double" value="1.0" />
+  <param name="d" type="double" value="0.1" />
+  <param name="Kx" type="double" value="1.0" />
+  <param name="Ky" type="double" value="1.0" />
+  <param name="Kt" type="double" value="1.0" />
+</node>
+\endverbatim
+

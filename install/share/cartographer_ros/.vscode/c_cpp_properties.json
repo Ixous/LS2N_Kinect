@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/louis/ros/devel/include",
+        "/opt/ros/melodic/include",
+        "/home/louis/ros/src/kobuki/kobuki_auto_docking/include",
+        "/home/louis/ros/src/kobuki/kobuki_bumper2pc/include",
+        "/home/louis/ros/src/kobuki/kobuki_controller_tutorial/include",
+        "/home/louis/ros/src/kobuki/kobuki_keyop/include",
+        "/home/louis/ros/src/kobuki/kobuki_node/include",
+        "/home/louis/ros/src/kobuki/kobuki_random_walker/include",
+        "/home/louis/ros/src/kobuki/kobuki_safety_controller/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}

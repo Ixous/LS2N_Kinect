@@ -1,0 +1,5 @@
+# ninja log v5
+0	5094	1560938607	CMakeFiles/bump_blink_controller_nodelet.dir/src/nodelet.cpp.o	2ee221d4e3e741d0
+5099	5343	1560938607	/home/louis/ros/devel_isolated/kobuki_controller_tutorial/lib/libbump_blink_controller_nodelet.so	42172186726877a
+4	38	0	CMakeFiles/install.util	a915493fba5aabb0
+3	25	0	CMakeFiles/install.util	a915493fba5aabb0

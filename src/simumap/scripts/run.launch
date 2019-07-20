@@ -1,0 +1,26 @@
+<launch>
+    <!-- <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/> -->
+
+    <param name="windowWidth"   value="600" />
+    <param name="resizeWindow"  value="true" />
+    <param name="odom_freq"     value="100" />
+    <param name="simu_freq"     value="30" />
+    <param name="x_init"        value="0" />
+    <param name="y_init"        value="0" />
+    <param name="theta_init"    value="01.5708" />
+    <param name="wall_blue_threshold" value="150" />
+    <arg   name="file"          default="/home/louis/ros/src/MOBRO_ROS/maps/house2"/>
+    <arg   name="yamlfile"      default="$(arg file).yaml" />
+    <arg   name="pgmfile"       default="$(arg file).pgm" />
+
+    <rosparam command="load" file="$(arg yamlfile)" param="map"/>
+
+    <param name="pgmpath"       value="$(arg pgmfile)" />
+
+    <node name="static_transform_publisher" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 map base_link 10"/>
+
+    <node name="localization"   pkg="simumap" type="localization.py" />
+    <node name="simumap" pkg="simumap" type="simumap" />
+    <!-- <node name="simulation"     pkg="simumap" type="simulation.py" /> -->
+    <node name="visualization"  pkg="simumap" type="visualization.py" />
+</launch>
