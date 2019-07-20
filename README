@@ -10,7 +10,7 @@ With file the path and name of the map file (same name for both pgm and yaml)
 With file the name of the bag file (in the /home/louis/ros/src/MOBRO_ROS/bag/ directory, or specify the whole path)
 Then to save the map if it didn't do it automatically :
 §    rosrun map_server map_saver
-Tune the parameters of cartographer in the lua file in /home/louis/ros/src/MOBRO_ROS/config/
+Tune the parameters of cartographer in the lua file in /src/MOBRO_ROS/config/
 Downscale the map before launching the simulation for better performance and change the resolution accordingly
 The default resolution is 0.01 (1cm/pixel). Downscaling the image by a factor of 5 and changing the resolution in the corresponding yaml file to 0.05 is recommended
 If the simulation crashes with an OpenCV error, disable window resizing (set resizeWindow to false in the simumap launch file)
@@ -20,4 +20,5 @@ If the simulation crashes with an OpenCV error, disable window resizing (set res
 
 3D CARTOGRAPHER :
 §    roslaunch mobro turtlebot_slam_kinect.launch file:=3dD4
-With file the name of the bag file (in the /home/louis/ros/src/MOBRO_ROS/bag/ directory, or specify the whole path)
+With file the name of the bag file (in the /src/MOBRO_ROS/bag/ directory, or specify the whole path)
+Lua file in /src/MOBRO_ROS/config/
