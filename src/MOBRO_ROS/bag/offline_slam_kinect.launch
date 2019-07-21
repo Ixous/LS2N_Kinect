@@ -29,7 +29,7 @@
           -configuration_basenames $(arg config).lua
           -bag_filenames $(find mobro)/bag/$(arg file).bag"
       output="screen">
-    <remap from="/camera/depth/points" to="points2"/>
+    <remap from="/camera/depth_registered/points" to="points2"/>
   </node>
   
     </group>
@@ -42,7 +42,7 @@
           -configuration_directory $(find mobro)/config
           -configuration_basename $(arg config).lua"
       output="screen">
-    <remap from="/camera/depth/points" to="points2"/>
+    <remap from="/camera/depth_registered/points" to="points2"/>
   </node>
       
   <node name="playbag" pkg="rosbag" type="play"
