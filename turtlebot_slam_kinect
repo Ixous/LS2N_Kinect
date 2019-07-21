@@ -1,0 +1,62 @@
+$ roslaunch mobro turtlebot_slam_kinect.launch file:=/home/louis/ros/3dD4
+... logging to /home/louis/.ros/log/ff672a16-aa27-11e9-b1a6-4c3488fa19cd/roslaunch-petrel-31164.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://petrel:35741/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.3
+ * /use_sim_time: False
+
+NODES
+  /
+    cartographer_occupancy_grid_node (cartographer_ros/cartographer_occupancy_grid_node)
+    cartographer_offline_node (cartographer_ros/cartographer_offline_node)
+    map_saver_trigger (mobro/map_saver)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    rviz (rviz/rviz)
+    static_transform_publisher_base_footprint (tf/static_transform_publisher)
+    static_transform_publisher_base_link (tf/static_transform_publisher)
+    static_transform_publisher_wheel_left_link (tf/static_transform_publisher)
+    static_transform_publisher_wheel_right_link (tf/static_transform_publisher)
+
+auto-starting new master
+process[master]: started with pid [31177]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to ff672a16-aa27-11e9-b1a6-4c3488fa19cd
+process[rosout-1]: started with pid [31189]
+started core service [/rosout]
+process[static_transform_publisher_base_link-2]: started with pid [31195]
+process[static_transform_publisher_base_footprint-3]: started with pid [31198]
+process[static_transform_publisher_wheel_left_link-4]: started with pid [31199]
+process[static_transform_publisher_wheel_right_link-5]: started with pid [31205]
+process[robot_state_publisher-6]: started with pid [31212]
+process[rviz-7]: started with pid [31221]
+process[cartographer_offline_node-8]: started with pid [31228]
+process[cartographer_occupancy_grid_node-9]: started with pid [31230]
+process[map_saver_trigger-10]: started with pid [31231]
+[ INFO] [1563542439.215261475]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/ros/src/MOBRO_ROS/config/turtlebot_urg_lidar_3d.lua' for 'turtlebot_urg_lidar_3d.lua'.
+[ INFO] [1563542439.217560208]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1563542439.217863034]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1563542439.218173982]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1563542439.218516918]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1563542439.218863298]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1563542439.219115705]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1563542439.219347369]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1563542439.219596987]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1563542439.219924923]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1563542439.220113160]: I0719 15:20:39.000000 31228 configuration_file_resolver.cc:41] Found '/home/louis/catkin_ws/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+terminate called after throwing an instance of 'rosbag::BagIOException'
+  what():  Error opening file: /home/louis/ros/src/MOBRO_ROS/bag//home/louis/ros/3dD4.bag
+[cartographer_offline_node-8] process has died [pid 31228, exit code -6, cmd /home/louis/ros/install_isolated/lib/cartographer_ros/cartographer_offline_node -configuration_directory /home/louis/ros/src/MOBRO_ROS/config -configuration_basenames turtlebot_urg_lidar_3d.lua -bag_filenames /home/louis/ros/src/MOBRO_ROS/bag//home/louis/ros/3dD4.bag /camera/depth_registered/points:=points2 __name:=cartographer_offline_node __log:=/home/louis/.ros/log/ff672a16-aa27-11e9-b1a6-4c3488fa19cd/cartographer_offline_node-8.log].
+log file: /home/louis/.ros/log/ff672a16-aa27-11e9-b1a6-4c3488fa19cd/cartographer_offline_node-8*.log
+/home/louis/ros/src/MOBRO_ROS/bag/map_saver:13: SyntaxWarning: The publisher should be created with an explicit keyword argument 'queue_size'. Please see http://wiki.ros.org/rospy/Overview/Publishers%20and%20Subscribers for more information.
+  self.pub = rospy.Publisher('/map',OccupancyGrid)

@@ -1,0 +1,66 @@
+$ cartographer_rosbag_validate -bag_filename /home/louis/ros/3dD4.bag 
+E0719 15:21:28.426426 31388 rosbag_validate_main.cc:350] frame_id "odom" on topic /odom has serialization time 1563541524.021554156 but sensor time 1563541522.079008800 differing by -1.94255 s.
+E0719 15:21:28.426743 31388 rosbag_validate_main.cc:350] frame_id "odom" on topic /odom has serialization time 1563541524.026883210 but sensor time 1563541522.101030762 differing by -1.92585 s.
+E0719 15:21:28.426815 31388 rosbag_validate_main.cc:350] frame_id "odom" on topic /odom has serialization time 1563541524.026922288 but sensor time 1563541522.160195826 differing by -1.86673 s.
+W0719 15:21:28.429309 31388 rosbag_validate_main.cc:103] frame_id gyro_link time 1563541523504935492: IMU linear acceleration is 0 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 0 0 0
+W0719 15:21:28.429368 31388 rosbag_validate_main.cc:103] frame_id gyro_link time 1563541523514935492: IMU linear acceleration is 0 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 0 0 0
+W0719 15:21:28.429533 31388 rosbag_validate_main.cc:103] frame_id gyro_link time 1563541523526811470: IMU linear acceleration is 0 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 0 0 0
+W0719 15:21:28.429949 31388 rosbag_validate_main.cc:352] frame_id "gyro_link" on topic /mobile_base/sensors/imu_data_raw has serialization time 1563541524.110294682 but sensor time 1563541523.616835361 differing by -0.493459 s.
+E0719 15:21:28.430335 31388 rosbag_validate_main.cc:326] frame_id "gyro_link" is send on multiple topics. It was seen at least on /mobile_base/sensors/imu_data_raw and /mobile_base/sensors/imu_data
+E0719 15:21:28.430410 31388 rosbag_validate_main.cc:315] Sensor with frame_id "gyro_link" jumps backwards in time. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0719 15:21:28.430564 31388 rosbag_validate_main.cc:326] frame_id "gyro_link" is send on multiple topics. It was seen at least on /mobile_base/sensors/imu_data_raw and /mobile_base/sensors/imu_data
+E0719 15:21:28.430841 31388 rosbag_validate_main.cc:326] frame_id "gyro_link" is send on multiple topics. It was seen at least on /mobile_base/sensors/imu_data_raw and /mobile_base/sensors/imu_data
+E0719 15:21:28.430881 31388 rosbag_validate_main.cc:315] Sensor with frame_id "gyro_link" jumps backwards in time. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0719 15:21:28.433492 31388 rosbag_validate_main.cc:315] Sensor with frame_id "gyro_link" jumps backwards in time. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0719 15:21:28.810129 31388 rosbag_validate_main.cc:365] Average IMU linear acceleration is 0 m/s^2, expected is [9.5, 10.5] m/s^2. Linear acceleration data should include gravity and be given in m/s^2.
+E0719 15:21:28.810171 31388 rosbag_validate_main.cc:382] Point data (frame_id: "camera_depth_optical_frame") has a large gap, largest is 0.499492 s, recommended is [0.0005, 0.05] s with no jitter.
+I0719 15:21:28.810195 31388 rosbag_validate_main.cc:398] Time delta histogram for consecutive messages on topic "/camera/depth/points" (frame_id: "camera_depth_optical_frame"):
+Count: 17  Min: 0.027343  Max: 0.499492  Mean: 0.161513
+[0.027343, 0.074558)                      ##    Count: 2 (11.764706%)   Total: 2 (11.764706%)
+[0.074558, 0.121773)                   #####    Count: 4 (23.529411%)   Total: 6 (35.294117%)
+[0.121773, 0.168988)                  ######    Count: 5 (29.411764%)   Total: 11 (64.705879%)
+[0.168988, 0.216203)                    ####    Count: 3 (17.647058%)   Total: 14 (82.352943%)
+[0.216203, 0.263418)                      ##    Count: 2 (11.764706%)   Total: 16 (94.117645%)
+[0.263418, 0.310633)                            Count: 0 (0.000000%)    Total: 16 (94.117645%)
+[0.310633, 0.357848)                            Count: 0 (0.000000%)    Total: 16 (94.117645%)
+[0.357848, 0.405063)                            Count: 0 (0.000000%)    Total: 16 (94.117645%)
+[0.405063, 0.452278)                            Count: 0 (0.000000%)    Total: 16 (94.117645%)
+[0.452278, 0.499492]                       #    Count: 1 (5.882353%)    Total: 17 (100.000000%)
+E0719 15:21:28.810308 31388 rosbag_validate_main.cc:382] Point data (frame_id: "camera_rgb_optical_frame") has a large gap, largest is 1.06636 s, recommended is [0.0005, 0.05] s with no jitter.
+I0719 15:21:28.810335 31388 rosbag_validate_main.cc:398] Time delta histogram for consecutive messages on topic "/camera/depth_registered/points" (frame_id: "camera_rgb_optical_frame"):
+Count: 2  Min: 0.334448  Max: 1.066361  Mean: 0.700405
+[0.334448, 0.407640)              ##########    Count: 1 (50.000000%)   Total: 1 (50.000000%)
+[0.407640, 0.480831)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.480831, 0.554022)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.554022, 0.627214)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.627214, 0.700405)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.700405, 0.773596)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.773596, 0.846787)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.846787, 0.919979)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.919979, 0.993170)                            Count: 0 (0.000000%)    Total: 1 (50.000000%)
+[0.993170, 1.066361]              ##########    Count: 1 (50.000000%)   Total: 2 (100.000000%)
+E0719 15:21:28.810438 31388 rosbag_validate_main.cc:389] IMU data (frame_id: "gyro_link") has a large gap, largest is 0.297364 s, recommended is [0.0005, 0.005] s with no jitter.
+I0719 15:21:28.810478 31388 rosbag_validate_main.cc:398] Time delta histogram for consecutive messages on topic "/mobile_base/sensors/imu_data_raw" (frame_id: "gyro_link"):
+Count: 319  Min: -0.909285  Max: 0.297364  Mean: 0.016799
+[-0.909285, -0.788620)                          Count: 1 (0.313480%)    Total: 1 (0.313480%)
+[-0.788620, -0.667955)                          Count: 0 (0.000000%)    Total: 1 (0.313480%)
+[-0.667955, -0.547290)                          Count: 0 (0.000000%)    Total: 1 (0.313480%)
+[-0.547290, -0.426625)                          Count: 0 (0.000000%)    Total: 1 (0.313480%)
+[-0.426625, -0.305961)                          Count: 1 (0.313480%)    Total: 2 (0.626959%)
+[-0.305961, -0.185296)                          Count: 1 (0.313480%)    Total: 3 (0.940439%)
+[-0.185296, -0.064631)                     #    Count: 8 (2.507837%)    Total: 11 (3.448276%)
+[-0.064631, 0.056034)        ###############    Count: 238 (74.608147%) Total: 249 (78.056427%)
+[0.056034, 0.176699)                    ####    Count: 67 (21.003136%)  Total: 316 (99.059563%)
+[0.176699, 0.297364]                            Count: 3 (0.940439%)    Total: 319 (100.000000%)
+I0719 15:21:28.810583 31388 rosbag_validate_main.cc:398] Time delta histogram for consecutive messages on topic "/odom" (frame_id: "odom"):
+Count: 134  Min: 0.019648  Max: 0.297331  Mean: 0.050633
+[0.019648, 0.047416)                  ######    Count: 37 (27.611940%)  Total: 37 (27.611940%)
+[0.047416, 0.075184)          ##############    Count: 96 (71.641792%)  Total: 133 (99.253731%)
+[0.075184, 0.102953)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.102953, 0.130721)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.130721, 0.158489)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.158489, 0.186258)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.186258, 0.214026)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.214026, 0.241794)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.241794, 0.269563)                            Count: 0 (0.000000%)    Total: 133 (99.253731%)
+[0.269563, 0.297331]                            Count: 1 (0.746269%)    Total: 134 (100.000000%)
